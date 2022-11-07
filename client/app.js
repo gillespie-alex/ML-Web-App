@@ -1,25 +1,5 @@
 // This will contain the dynamic code that will make 'http' calls to our backend, and retrieve the data, the file acts like a server communicator
 
-//function getBathValue() {
-//  var uiBathrooms = document.getElementsByName("uiBathrooms");
-//  for(var i in uiBathrooms) {
-//    if(uiBathrooms[i].checked) {
-//        return parseInt(i)+1;
-//    }
-//  }
-//  return -1; // Invalid Value
-//}
-//
-//function getBHKValue() {
-//  var uiBHK = document.getElementsByName("uiBHK");
-//  for(var i in uiBHK) {
-//    if(uiBHK[i].checked) {
-//        return parseInt(i)+1;
-//    }
-//  }
-//  return -1; // Invalid Value
-//}
-//
 function onClickedEstimatePrice() {
   console.log("Estimate income button clicked");
   var age = document.getElementById("uiSqft");
