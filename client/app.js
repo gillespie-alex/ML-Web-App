@@ -9,8 +9,7 @@ function onClickedEstimatePrice() {
   var marital_status = document.getElementById("uiLocations3");
   var estPrice = document.getElementById("uiEstimatedPrice");
 
-  var url = "http://127.0.0.1:5000/predict_income"; //Use this if you are NOT using nginx which is first 7 tutorials
-  //var url = "/api/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
+  var url = "http://127.0.0.1:5000/predict_income"; 
 
   $.post(url, {
       age: parseFloat(age.value),
@@ -33,7 +32,7 @@ function onClickedEstimatePrice() {
 
 function onPageLoad() {
   console.log( "document loaded" );
-  var url = "http://127.0.0.1:5000/get_education_names"; // Use this if you are NOT using nginx which is first 7 tutorials
+  var url = "http://127.0.0.1:5000/get_education_names"; 
   $.get(url,function(data, status) {
       console.log("got response for get_location_names request");
       if(data) {
@@ -46,7 +45,7 @@ function onPageLoad() {
           }
       }
   });
-  var url = "http://127.0.0.1:5000/get_workclass_names"; // Use this if you are NOT using nginx which is first 7 tutorials
+  var url = "http://127.0.0.1:5000/get_workclass_names"; 
   $.get(url,function(data, status) {
       console.log("got response for get_workclass_names request");
       if(data) {
@@ -59,7 +58,7 @@ function onPageLoad() {
           }
       }
   });
-  var url = "http://127.0.0.1:5000/get_marital_status"; // Use this if you are NOT using nginx which is first 7 tutorials
+  var url = "http://127.0.0.1:5000/get_marital_status"; 
   $.get(url,function(data, status) {
       console.log("got response for get_marital_status request");
       if(data) {
